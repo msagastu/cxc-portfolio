@@ -106,7 +106,7 @@ a:hover {
 .about {
   text-align: center;                /* Centers the text inside the section */
   padding: 4rem 2rem;                /* Adds padding inside the section */
-  background-color: white;          /* White background for the hero section */
+  background-color: var(--highlight); /* Warm Beige background to match other sections */
   margin: 2rem auto;                 /* Centers section horizontally with spacing around */
   border-radius: 12px;               /* Rounded corners for smooth edges */
   box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Subtle shadow for depth */
@@ -130,7 +130,7 @@ a:hover {
 .why {
   text-align: center;                /* Centers the text inside the section */
   padding: 4rem 2rem;                /* Adds vertical and horizontal padding */
-  background-color: white;          /* White background for the hero section */
+  background-color: var(--highlight); /* Warm Beige background to match other sections */
   margin: 2rem auto;                 /* Centers section with margin */
   border-radius: 12px;               /* Rounded corners */
   box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Subtle shadow */
