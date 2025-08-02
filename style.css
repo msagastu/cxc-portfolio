@@ -1,139 +1,79 @@
 /* ------------------------------
    Root Variables (Color Palette)
-   Defining colors for easy reuse throughout the site
+   Centralized theme using forest + cream tones
 --------------------------------- */
 :root {
-  --bg-color: #F7F5F1;           /* Natural Cream - Background of the whole site */
-  --accent-1: #4A6741;           /* Forest Green - Primary accent for navbar, headings */
-  --accent-2: #5F7A56;           /* Sage Green - Secondary accent for buttons, links */
-  --highlight: #F2F2F2;          /* Off White - Section backgrounds and highlights */
-  --text-primary: #2D3E2A;       /* Deep Forest Green - Main text color (used for body text) */
-  --text-secondary: #7A8F71;     /* Light Sage - Subtle text like footer, tags, or smaller headings */
+  --bg-color: #F7F5F1;         /* Natural Cream - main site background */
+  --highlight: #F8F8F8;        /* Soft Off-White - replaces beige for sections */
+  --accent-1: #4A6741;         /* Forest Green - navigation and hover accents */
+  --accent-2: #5F7A56;         /* Sage Green - buttons and links */
+  --text-primary: #2D3E2A;     /* Deep Forest Green - primary body text */
+  --text-secondary: #7A8F71;   /* Light Sage - subtle text like footers */
 }
 
 /* ------------------------------
-   Global Styles
-   General settings for all elements on the page
+   Reset and Global Styles
 --------------------------------- */
 * {
-  margin: 0;                      /* Removes default margin for all elements */
-  padding: 0;                     /* Removes default padding for all elements */
-  box-sizing: border-box;         /* Makes width and height calculation easier */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg-color);   /* Soft cream background */
-  color: var(--text-primary);          /* Deep green text */
-  font-family: 'Georgia', serif;       /* Elegant, serif font */
-  line-height: 1.6;                    /* Sets line height for readability */
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
 }
 
 /* ------------------------------
    Typography
-   For all headings and links
 --------------------------------- */
 h1, h2, h3 {
-  color: var(--accent-1);     /* Forest Green - Color for all headers (h1, h2, h3) */
+  color: var(--accent-1);  /* Forest Green headers */
 }
 
 a {
-  color: var(--accent-2);     /* Sage Green - Color for links */
-  text-decoration: none;      /* Removes underline from links */
-  transition: color 0.3s ease; /* Smooth color change when hovering over links */
+  color: var(--accent-2);  /* Sage Green links */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--accent-1);     /* Forest Green - Link color on hover */
+  color: var(--accent-1);  /* Darker green on hover */
 }
 
 /* ------------------------------
    Navigation Bar
-   The top menu that holds links to other pages
 --------------------------------- */
 .top-nav {
-  background-color: var(--accent-1);  /* Forest Green background for the navbar */
-  padding: 1rem;                      /* Adds spacing around navbar content */
+  background-color: var(--accent-1);
+  padding: 1rem;
 }
 
 .top-nav ul {
-  list-style: none;                   /* Removes default list styling (bullets) */
-  display: flex;                      /* Align items horizontally */
-  justify-content: center;           /* Centers the list items (links) */
-  gap: 2rem;                          /* Adds space between each link */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .top-nav a {
-  color: white;                       /* White text for the navigation links */
-  font-weight: bold;                 /* Bold font for links */
+  color: white;
+  font-weight: bold;
 }
 
 .top-nav a:hover {
-  color: var(--highlight);           /* Warm Beige - Changes link color on hover */
+  color: var(--highlight);  /* Soft off-white hover */
 }
 
 /* ------------------------------
    Welcome Section (Hero)
-   The intro section in the middle of the page
 --------------------------------- */
 .welcome {
-  text-align: center;                /* Centers the text inside the welcome section */
-  padding: 4rem 2rem;                /* Adds padding inside the section */
-  background-color: white;          /* White background for contrast */
-  margin: 2rem auto;                /* Centers it horizontally with space around */
-  border-radius: 12px;              /* Rounded corners */
-  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Subtle shadow to add depth */
-  max-width: 800px;                 /* Limits width for better readability */
-}
-
-.welcome h1 {
-  font-size: 2.5rem;                 /* Large heading text */
-  margin-bottom: 1rem;              /* Adds space under the heading */
-}
-
-.welcome p {
-  font-size: 1.2rem;                 /* Larger paragraph text for readability */
-  margin-bottom: 2rem;              /* Space under the paragraph */
-}
-
-/* ------------------------------
-   Buttons
-   Styled button for interactive elements like "About Me" links
---------------------------------- */
-.button {
-  display: inline-block;            /* Makes the button inline with text but styled like a box */
-  padding: 0.75rem 1.5rem;          /* Adds padding around the button */
-  background-color: var(--accent-2);/* Sage Green background for the button */
-  color: white;                     /* White text inside the button */
-  border: none;                     /* No border for a clean look */
-  border-radius: 5px;               /* Rounded corners for the button */
-  font-weight: bold;               /* Bold text */
-  transition: background-color 0.3s ease; /* Smooth color transition on hover */
-}
-
-.button:hover {
-  background-color: var(--accent-1);/* Forest Green - Button turns green on hover */
-}
-
-/* ------------------------------
-   Section Styles
-   Each content section like "About Me" or "The Why" sections
---------------------------------- */
-section {
-  background-color: var(--highlight); /* Warm Beige background for content sections */
-  padding: 2rem;                      /* Adds padding inside each section */
-  margin: 1rem auto;                  /* Centers sections with space above/below */
-  border-radius: 12px;                /* Rounded corners for sections */
-  max-width: 900px;                   /* Limits width to avoid stretched text */
-}
-
-/* ------------------------------
-   Footer
-   The footer at the bottom of the page
---------------------------------- */
-footer {
-  text-align: center;                 /* Centers footer text */
-  margin-top: 4rem;                   /* Adds space between the main content and footer */
-  padding: 1rem;                      /* Adds padding inside the footer */
-  font-size: 0.9rem;                  /* Slightly smaller font in footer */
-  color: var(--text-secondary);       /* Light Sage - Uses subtle text color */
-}
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: white;
+  margin: 2rem auto;
+  border
