@@ -7,7 +7,7 @@
   --sage: #5F7A56;              /* Sage Green - secondary accents */
   --light-sage: #7A8F71;        /* Light Sage - soft touches */
   --white: #ffffff;             /* Clean white background */
-   --bg-color: #dedcd8;           /* Natural Cream - Soft background for the page */
+   --bg-color: #D3D3D3;           /* Natural Cream - Soft background for the page */
    --text-primary: #2D3E2A;       /* Deep Forest Green - Main text color (darkest) */
 }
 
@@ -70,10 +70,12 @@ ul {
 ---------------------------- */
 .welcome {
   background-color: var(--white); /* White background */
-  padding: 100px 20px;
+  padding: 4rem 2rem;
   text-align: center;
-   border-radius: 15px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+   margin: 2rem auto;
+   border-radius: 12px;
+   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+   max-width: 800px;
 }
 
 .welcome h1 {
