@@ -14,7 +14,7 @@ body {
 }
 
 .top-nav {
-  background-color: #222;
+  background-color: #2D3E2A;
   padding: 1rem;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .top-nav a:hover {
-  color: #ff6f61;
+  color: #7A8F71;
 }
 
 .welcome {
