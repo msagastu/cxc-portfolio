@@ -70,6 +70,7 @@ ul {
 .top-nav a {
   color: white;
   font-weight: normal;
+   font-size: 1.1em;
   transition: color 0.3s ease;
 }
 
@@ -82,12 +83,12 @@ ul {
 ---------------------------- */
 .welcome {
   background-color: var(--white); /* White background */
-  padding: 80px 20px; /* Increased padding for more white space */
+  padding: 60px 10px; /* Increased padding for more white space */
   text-align: center;
-  margin: 40px auto; /* Added more margin for ample white space */
+  margin: 20px auto; /* Added more margin for ample white space */
   border-radius: 15px;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
-  max-width: 800px; /* Set the max-width to make it more centered and not too wide */
+  max-width: 400px; /* Set the max-width to make it more centered and not too wide */
 }
 
 .welcome h1 {
