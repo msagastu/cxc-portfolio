@@ -106,7 +106,7 @@ a:hover {
 .about {
   text-align: center;                /* Centers the text inside the section */
   padding: 4rem 2rem;                /* Adds padding inside the section */
-  background-color: var(--highlight); /* Warm Beige background to match other sections */
+  background-color: var(--highlight); /* Warm Beige background for consistency */
   margin: 2rem auto;                 /* Centers section horizontally with spacing around */
   border-radius: 12px;               /* Rounded corners for smooth edges */
   box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Subtle shadow for depth */
@@ -178,4 +178,5 @@ footer {
   font-size: 0.9rem;                  /* Slightly smaller text for footer */
   color: var(--text-secondary);       /* Light Sage for footer text */
 }
+
 
