@@ -1,42 +1,41 @@
-/* 🌿 Color Variables */
+/* ------------------------------
+   Root Variables (Color Palette)
+--------------------------------- */
 :root {
-  --bg-color: #FAFAF9;         /* Light background */
-  --accent-1: #8C977A;         /* For headings */
-  --accent-2: #C19A6B;         /* For links/buttons */
-  --text-primary: #333333;     /* Main text */
-  --text-secondary: #66615B;   /* Subtle text */
-  --highlight: #E7DCCB;        /* Section backgrounds */
-  --nav-bg: #2D3E2A;           /* Top nav background */
-  --nav-hover: #7A8F71;        /* Nav hover color */
-  --button-bg: #FF6F61;        /* Main button */
-  --button-hover: #E85B4F;     /* Button hover */
+  --bg-color: #FAFAF9;
+  --accent-1: #8C977A;     /* Calming green */
+  --accent-2: #C19A6B;     /* Warm tan */
+  --highlight: #E7DCCB;    /* Soft highlight */
+  --text-primary: #333333;
+  --text-secondary: #66615B;
 }
 
-/* 🌿 Basic Reset */
+/* ------------------------------
+   Global Styles
+--------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 🌿 Body Setup */
 body {
-  font-family: 'Georgia', serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
+  font-family: 'Georgia', serif;
   line-height: 1.6;
 }
 
-/* 🌿 Headings */
+/* ------------------------------
+   Typography
+--------------------------------- */
 h1, h2, h3 {
   color: var(--accent-1);
 }
 
-/* 🌿 Links */
 a {
   color: var(--accent-2);
   text-decoration: none;
-  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -44,34 +43,41 @@ a:hover {
   color: var(--accent-1);
 }
 
-/* 🌿 Navigation */
+/* ------------------------------
+   Navigation Bar
+--------------------------------- */
 .top-nav {
-  background-color: var(--nav-bg);
+  background-color: var(--accent-1);
   padding: 1rem;
 }
 
 .top-nav ul {
-  display: flex;
-  justify-content: space-around;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .top-nav a {
   color: white;
+  font-weight: bold;
 }
 
 .top-nav a:hover {
-  color: var(--nav-hover);
+  color: var(--highlight);
 }
 
-/* 🌿 Welcome Section */
+/* ------------------------------
+   Hero / Welcome Section
+--------------------------------- */
 .welcome {
   text-align: center;
   padding: 4rem 2rem;
   background-color: white;
-  margin-top: 2rem;
-  border-radius: 10px;
+  margin: 2rem auto;
+  border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 800px;
 }
 
 .welcome h1 {
@@ -84,29 +90,38 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-/* 🌿 Buttons */
+/* ------------------------------
+   Buttons
+--------------------------------- */
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--button-bg);
+  background-color: var(--accent-2);
   color: white;
+  border: none;
   border-radius: 5px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--button-hover);
+  background-color: var(--accent-1);
 }
 
-/* 🌿 Sections */
+/* ------------------------------
+   Section Styles
+--------------------------------- */
 section {
-  padding: 2rem;
   background-color: var(--highlight);
+  padding: 2rem;
+  margin: 1rem auto;
   border-radius: 12px;
-  margin: 1rem;
+  max-width: 900px;
 }
 
-/* 🌿 Footer */
+/* ------------------------------
+   Footer
+--------------------------------- */
 footer {
   text-align: center;
   margin-top: 4rem;
@@ -114,6 +129,7 @@ footer {
   font-size: 0.9rem;
   color: var(--text-secondary);
 }
+
 
 
 
