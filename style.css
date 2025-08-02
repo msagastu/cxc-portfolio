@@ -1,3 +1,17 @@
+/* Reset */
+* { 
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+html, body{
+   margin:0;
+   padding:0;
+}
+/*Reset*/
+
+
 /* ----------------------------
    Color Palette (Variables)
 ---------------------------- */
@@ -70,7 +84,7 @@ ul {
 ---------------------------- */
 .welcome {
   background-color: var(--white); /* White background */
-  padding: 100px 20px;
+  padding: 60px 20px;
   text-align: center;
    margin: 20px auto;
    border-radius: 15px;
@@ -93,7 +107,7 @@ ul {
 ---------------------------- */
 .about {
   background-color: var(--white); /* Also white */
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
   border-top: 1px solid var(--light-sage);
    border-radius: 15px;  /* Added rounded corners */
@@ -132,7 +146,7 @@ ul {
 ---------------------------- */
 .why {
   background-color: var(--white); /* Consistent clean background */
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
   max-width: 800px;
   margin: auto;
