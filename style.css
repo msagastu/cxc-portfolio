@@ -70,6 +70,8 @@ ul {
   background-color: var(--white); /* White background */
   padding: 100px 20px;
   text-align: center;
+   border-radius: 15px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 .welcome h1 {
@@ -91,6 +93,9 @@ ul {
   padding: 60px 20px;
   text-align: center;
   border-top: 1px solid var(--light-sage);
+   border-radius: 15px;  /* Added rounded corners */
+  max-width: 750px; /* Makes it a bit skinnier */
+  margin: 20px auto; /* Centers it with some space */
 }
 
 .about h2 {
@@ -129,6 +134,9 @@ ul {
   max-width: 800px;
   margin: auto;
   border-top: 1px solid var(--light-sage);
+   border-radius: 15px;  /* Added rounded corners */
+  max-width: 750px; /* Makes it a bit skinnier */
+  margin: 20px auto; /* Centers it with some space */
 }
 
 .why h2 {
