@@ -84,12 +84,12 @@ ul {
 ---------------------------- */
 .welcome {
   background-color: var(--white); /* White background */
-  padding: 80px 30px;
+  padding: 60px 10px;
   text-align: center;
-   max-width: 815px;
-   margin: 40px auto;
+   max-width: 1000px;
+   margin: 20px auto;
    border-radius: 20px;
-   box-shadow: 0 0px 12px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4); /* Optional shadow for depth */
 }
 
 .welcome h1 {
