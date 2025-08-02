@@ -83,9 +83,9 @@ ul {
 ---------------------------- */
 .welcome {
   background-color: var(--white); /* White background */
-  padding: 60px 20px; /* Increased padding for more white space */
+  padding: 80px 30px; /* Increased padding for more white space */
   text-align: center;
-  margin: 30px auto; /* Added more margin for ample white space */
+  margin: 20px auto; /* Added more margin for ample white space */
   border-radius: 15px;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
   max-width: 1000px; /* Set the max-width to make it more centered and not too wide */
