@@ -1,135 +1,139 @@
 /* ------------------------------
    Root Variables (Color Palette)
+   These are reusable colors you can change in one place.
 --------------------------------- */
 :root {
-  --bg-color: #FAFAF9;
-  --accent-1: #8C977A;     /* Calming green */
-  --accent-2: #4A4238;     /* Light brown */
-  --highlight: #E7DCCB;    /* Soft highlight */
-  --text-primary: #333333;
-  --text-secondary: #66615B;
+  --bg-color: #FAFAF9;        /* Background of the whole site */
+  --accent-1: #8C977A;        /* Green used for headers and navbar */
+  --accent-2: #C19A6B;        /* Tan used for buttons and links */
+  --highlight: #E7DCCB;       /* Light beige used for sections */
+  --text-primary: #333333;    /* Main text color */
+  --text-secondary: #66615B;  /* Subtext / footer text */
 }
 
 /* ------------------------------
    Global Styles
+   Applies to every element on the page.
 --------------------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;                  /* Removes default spacing around everything */
+  padding: 0;                 /* Removes default inner spacing */
+  box-sizing: border-box;     /* Includes border & padding in total size */
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-primary);
-  font-family: 'Georgia', serif;
-  line-height: 1.6;
+  background-color: var(--bg-color);   /* Sets overall page background */
+  color: var(--text-primary);          /* Makes default text dark gray */
+  font-family: 'Georgia', serif;       /* Sets the font to Georgia */
+  line-height: 1.6;                    /* Makes lines slightly spaced for readability */
 }
 
 /* ------------------------------
    Typography
+   Styles for headers and links.
 --------------------------------- */
 h1, h2, h3 {
-  color: var(--accent-1);
+  color: var(--accent-1);     /* Makes all header tags green */
 }
 
 a {
-  color: var(--accent-2);
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: var(--accent-2);     /* Links are tan by default */
+  text-decoration: none;      /* Removes underlines from links */
+  transition: color 0.3s ease;/* Smooth color change on hover */
 }
 
 a:hover {
-  color: var(--accent-1);
+  color: var(--accent-1);     /* Links turn green on hover */
 }
 
 /* ------------------------------
    Navigation Bar
+   Top menu bar with page links.
 --------------------------------- */
 .top-nav {
-  background-color: var(--accent-1);
-  padding: 1rem;
+  background-color: var(--accent-1);  /* Green background */
+  padding: 1rem;                      /* Spacing inside the bar */
 }
 
 .top-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  list-style: none;                   /* Removes bullets */
+  display: flex;                      /* Displays list items side by side */
+  justify-content: center;           /* Centers the nav items horizontally */
+  gap: 2rem;                          /* Adds space between items */
 }
 
 .top-nav a {
-  color: white;
-  font-weight: bold;
+  color: white;                       /* White text for nav links */
+  font-weight: bold;                 /* Bold font for nav links */
 }
 
 .top-nav a:hover {
-  color: var(--highlight);
+  color: var(--highlight);           /* Nav link turns beige on hover */
 }
 
 /* ------------------------------
-   Hero / Welcome Section
+   Welcome / Hero Section
+   Big intro box in the middle of the landing page.
 --------------------------------- */
 .welcome {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: white;
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  max-width: 800px;
+  text-align: center;                /* Centers all text */
+  padding: 4rem 2rem;                /* Adds space around the content */
+  background-color: white;          /* White background for contrast */
+  margin: 2rem auto;                /* Adds top/bottom space + center horizontally */
+  border-radius: 12px;              /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Very subtle shadow for depth */
+  max-width: 800px;                 /* Keeps it from stretching too wide */
 }
 
 .welcome h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;                 /* Big headline text */
+  margin-bottom: 1rem;              /* Space under the heading */
 }
 
 .welcome p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;                 /* Slightly larger paragraph text */
+  margin-bottom: 2rem;              /* Space under the paragraph */
 }
 
 /* ------------------------------
    Buttons
+   Reusable class for all buttons.
 --------------------------------- */
 .button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--accent-2);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  display: inline-block;            /* Makes it behave like a box */
+  padding: 0.75rem 1.5rem;          /* Padding inside the button */
+  background-color: var(--accent-2);/* Tan background */
+  color: white;                     /* White text */
+  border: none;                     /* No border outline */
+  border-radius: 5px;               /* Slightly rounded corners */
+  font-weight: bold;               /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth color shift on hover */
 }
 
 .button:hover {
-  background-color: var(--accent-1);
+  background-color: var(--accent-1);/* Turns green when hovered */
 }
 
 /* ------------------------------
-   Section Styles
+   Section Blocks
+   Any content block like "About Me" or "The Why".
 --------------------------------- */
 section {
-  background-color: var(--highlight);
-  padding: 2rem;
-  margin: 1rem auto;
-  border-radius: 12px;
-  max-width: 900px;
+  background-color: var(--highlight); /* Beige background */
+  padding: 2rem;                      /* Inner space */
+  margin: 1rem auto;                  /* Top/bottom spacing + center it */
+  border-radius: 12px;                /* Rounded corners */
+  max-width: 900px;                   /* Restrict max width */
 }
 
 /* ------------------------------
    Footer
+   Simple footer style.
 --------------------------------- */
 footer {
-  text-align: center;
-  margin-top: 4rem;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
+  text-align: center;                 /* Centered text */
+  margin-top: 4rem;                   /* Push it down from content */
+  padding: 1rem;                      /* Inner padding */
+  font-size: 0.9rem;                  /* Slightly smaller font */
+  color: var(--text-secondary);       /* Uses soft gray */
 }
-
-
-
-
