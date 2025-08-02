@@ -15,8 +15,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--white);
-  color: var(--forest-dark);
+  background-color: #fbf2ec;
+  color: #333;
 }
 
 h1, h2, h3 {
