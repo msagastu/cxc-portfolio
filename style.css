@@ -1,179 +1,167 @@
-/* ------------------------------
-   Root Variables (Color Palette)
-   Centralized theme using forest + cream tones
---------------------------------- */
+/* ----------------------------
+   Color Palette (Variables)
+---------------------------- */
 :root {
-  --bg-color: #F7F5F1;         /* Natural Cream - main site background */
-  --highlight: #F8F8F8;        /* Soft Off-White - replaces beige for sections */
-  --accent-1: #4A6741;         /* Forest Green - navigation and hover accents */
-  --accent-2: #5F7A56;         /* Sage Green - buttons and links */
-  --text-primary: #2D3E2A;     /* Deep Forest Green - primary body text */
-  --text-secondary: #7A8F71;   /* Light Sage - subtle text like footers */
+  --forest-dark: #2D3E2A;       /* Deep Forest Green - text, headings */
+  --forest-green: #4A6741;      /* Forest Green - navigation, accents */
+  --sage: #5F7A56;              /* Sage Green - secondary accents */
+  --light-sage: #7A8F71;        /* Light Sage - soft touches */
+  --cream: #F7F5F1;             /* Natural Cream - soft background (unused) */
+  --beige: #E8E3D3;             /* Warm Beige - optional neutral (unused) */
+  --white: #ffffff;             /* Clean white background */
 }
 
-/* ------------------------------
-   Reset and Global Styles
---------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ----------------------------
+   Global Styles
+---------------------------- */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-primary);
-  font-family: 'Georgia', serif;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--white);
+  color: var(--forest-dark);
 }
 
-/* ------------------------------
-   Typography
---------------------------------- */
 h1, h2, h3 {
-  color: var(--accent-1);  /* Forest Green headers */
+  color: var(--forest-dark);
 }
 
 a {
-  color: var(--accent-2);  /* Sage Green links */
   text-decoration: none;
-  transition: color 0.3s ease;
+  color: var(--forest-green);
 }
 
-a:hover {
-  color: var(--accent-1);  /* Darker green on hover */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-/* ------------------------------
+/* ----------------------------
    Navigation Bar
---------------------------------- */
+---------------------------- */
 .top-nav {
-  background-color: var(--accent-1);
+  background-color: var(--forest-green);
   padding: 1rem;
+  text-align: center;
 }
 
 .top-nav ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+}
+
+.top-nav li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .top-nav a {
   color: white;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .top-nav a:hover {
-  color: var(--highlight);  /* Soft off-white hover */
+  color: var(--light-sage);
 }
 
-/* ------------------------------
-   Welcome Section (Hero)
---------------------------------- */
+/* ----------------------------
+   Welcome Section
+---------------------------- */
 .welcome {
+  background-color: var(--white); /* White background */
+  padding: 100px 20px;
   text-align: center;
-  padding: 4rem 2rem;
-  background-color: white;
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  max-width: 800px;
 }
 
 .welcome h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 .welcome p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: auto;
 }
 
-/* ------------------------------
-   About Me Section
---------------------------------- */
+/* ----------------------------
+   About Section
+---------------------------- */
 .about {
+  background-color: var(--white); /* Also white */
+  padding: 60px 20px;
   text-align: center;
-  padding: 4rem 2rem;
-  background-color: var(--highlight);  /* Soft off-white */
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  max-width: 800px;
+  border-top: 1px solid var(--light-sage);
 }
 
 .about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.5em;
+  margin-bottom: 15px;
 }
 
 .about p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-/* ------------------------------
-   The Why Section
---------------------------------- */
-.why {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: var(--highlight);  /* Soft off-white */
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  max-width: 800px;
-}
-
-.why h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.why p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-/* ------------------------------
-   Buttons
---------------------------------- */
 .button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--accent-2);  /* Sage green */
+  padding: 10px 20px;
+  background-color: var(--forest-green);
   color: white;
-  border: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--accent-1);  /* Dark green on hover */
+  background-color: var(--sage);
 }
 
-/* ------------------------------
-   Generic Section Formatting (optional use)
---------------------------------- */
-section {
-  padding: 2rem;
-  margin: 1rem auto;
-  border-radius: 12px;
-  max-width: 900px;
-  /* DO NOT override background-color globally here! */
+/* ----------------------------
+   The Why Section
+---------------------------- */
+.TheWhy {
+  background-color: var(--white); /* Consistent clean background */
+  padding: 60px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  border-top: 1px solid var(--light-sage);
 }
 
-/* ------------------------------
-   Footer
---------------------------------- */
-footer {
+.TheWhy h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
   text-align: center;
-  margin-top: 4rem;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
+}
+
+.TheWhy h3 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.TheWhy p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.TheWhy ul {
+  margin-top: 10px;
+  font-size: 1.05em;
+}
+
+/* ----------------------------
+   Footer
+---------------------------- */
+footer {
+  background-color: var(--forest-green);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
