@@ -83,7 +83,7 @@ ul {
 ---------------------------- */
 .welcome {
   background-color: var(--white); /* White background */
-  padding: 80px 30px; /* Increased padding for more white space */
+  padding: 70px 40px; /* Increased padding for more white space */
   text-align: center;
   margin: 20px auto; /* Added more margin for ample white space */
   border-radius: 15px;
@@ -107,11 +107,11 @@ ul {
 ---------------------------- */
 .about {
   background-color: var(--white); /* White background */
-  padding: 60px 20px; /* Increased padding for more breathing room */
+  padding: 70px 30px; /* Increased padding for more breathing room */
   text-align: center;
   border-top: 1px solid var(--light-sage);
   border-radius: 15px; /* Added rounded corners */
-  max-width: 700px; /* Slightly skinnier than the Welcome section */
+  max-width: 1000px; /* Slightly skinnier than the Welcome section */
   margin: 30px auto; /* Centers it with some space */
 }
 
@@ -132,9 +132,9 @@ ul {
 ---------------------------- */
 .why {
   background-color: var(--white); /* Clean white background */
-  padding: 60px 20px; /* Adjusted padding to match About */
+  padding: 70px 30px; /* Adjusted padding to match About */
   text-align: center;
-  max-width: 700px; /* Slightly skinnier than the Welcome section */
+  max-width: 1000px; /* Slightly skinnier than the Welcome section */
   margin: 30px auto; /* Added space between sections */
   border-top: 1px solid var(--light-sage);
   border-radius: 15px; /* Added rounded corners */
