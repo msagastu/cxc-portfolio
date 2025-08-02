@@ -88,7 +88,7 @@ ul {
   margin: 30px auto; /* Added more margin for ample white space */
   border-radius: 15px;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
-  max-width: 700px; /* Set the max-width to make it more centered and not too wide */
+  max-width: 1000px; /* Set the max-width to make it more centered and not too wide */
 }
 
 .welcome h1 {
