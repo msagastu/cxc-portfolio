@@ -1,71 +1,71 @@
 /* ------------------------------
-   Root Variables (Color Palette)
+   Root Variables (for easy color management)
 --------------------------------- */
 :root {
-  --bg-color: #F7F5F1;           /* Natural Cream (main background for the page) */
-  --accent-1: #4A6741;           /* Forest Green (for primary accents, headings) */
-  --accent-2: #5F7A56;           /* Sage Green (secondary accents, links, buttons) */
-  --highlight: #E8E3D3;          /* Warm Beige (for highlights and accents) */
-  --text-primary: #2D3E2A;       /* Deep Forest Green (main text color) */
-  --text-secondary: #7A8F71;     /* Light Sage (subtle text color for footer, etc.) */
-  --off-white: #F2F2F2;          /* Off-white color for the About Me section */
+  --bg-color: #F7F5F1;           /* Main background color for the page (Natural Cream) */
+  --text-primary: #2D3E2A;       /* Deep Forest Green for text */
+  --highlight: #E8E3D3;          /* Warm Beige for accents (used in sections) */
+  --off-white: #F2F2F2;          /* Off-white color for About Me background */
+  --accent-1: #4A6741;           /* Forest Green for primary headings and accents */
 }
 
 /* ------------------------------
-   Global Styles (Body and General Layout)
+   Global Page Setup
 --------------------------------- */
 body {
-  background-color: var(--bg-color);   /* Background color for the page */
-  color: var(--text-primary);          /* Main text color */
-  font-family: 'Georgia', serif;       /* Elegant serif font */
-  line-height: 1.6;                    /* For readability */
+  background-color: var(--bg-color);   /* Background color for the whole page */
+  color: var(--text-primary);          /* Text color for the whole page */
+  font-family: 'Georgia', serif;       /* Elegant, readable font */
+  line-height: 1.6;                    /* For easy readability */
+  margin: 0;
+  padding: 0;
 }
 
 /* ------------------------------
-   Section Styles (Including "Welcome", "About", "Why")
+   Section Styles (Welcome, About Me, Why Section)
 --------------------------------- */
 
 /* Welcome Section */
 .welcome {
-  text-align: center;                 /* Centers the text */
-  padding: 4rem 2rem;                 /* Padding inside the section */
-  background-color: white;            /* White background */
-  margin: 2rem auto;                  /* Centers the section horizontally */
-  border-radius: 12px;                /* Rounded corners */
-  max-width: 900px;                   /* Max width for better alignment */
+  text-align: center;                 /* Centers the text inside the section */
+  padding: 4rem 2rem;                 /* Adds padding to create space inside the section */
+  background-color: white;            /* White background for the Welcome section */
+  margin: 2rem auto;                  /* Centers the section horizontally with margin */
+  border-radius: 12px;                /* Rounded corners for a smoother look */
+  max-width: 900px;                   /* Restricts width for better readability */
 }
 
 /* About Me Section */
 .about {
-  text-align: center;                 /* Centers the text */
-  padding: 4rem 2rem;                 /* Padding inside the section */
-  background-color: var(--off-white); /* Off-white background */
+  text-align: center;                 /* Centers the text inside the section */
+  padding: 4rem 2rem;                 /* Adds padding for content inside */
+  background-color: var(--off-white); /* Off-white background for the About Me section */
   margin: 2rem auto;                  /* Centers the section */
-  border-radius: 12px;                /* Rounded corners */
-  max-width: 900px;                   /* Max width for consistency */
+  border-radius: 12px;                /* Rounded corners for a smooth look */
+  max-width: 900px;                   /* Restricts the section width */
 }
 
 /* The Why Section */
 .why {
-  text-align: center;                 /* Centers the text */
-  padding: 4rem 2rem;                 /* Padding inside the section */
-  background-color: white;            /* White background */
+  text-align: center;                 /* Centers the text inside the section */
+  padding: 4rem 2rem;                 /* Adds padding for spacing */
+  background-color: white;            /* White background for the Why section */
   margin: 2rem auto;                  /* Centers the section */
-  border-radius: 12px;                /* Rounded corners */
-  max-width: 900px;                   /* Max width for consistency */
+  border-radius: 12px;                /* Rounded corners for a smoother look */
+  max-width: 900px;                   /* Restricts section width */
 }
 
 /* ------------------------------
-   Heading Styles (For all h1, h2, h3, etc.)
+   Heading Styles (For h1, h2, h3, etc.)
 --------------------------------- */
 h2 {
-  font-size: 2.5rem;                  /* Size for main section headings */
-  margin-bottom: 1rem;                /* Space under the heading */
+  font-size: 2.5rem;                  /* Sets the font size for section titles */
+  margin-bottom: 1rem;                /* Adds space below the heading */
 }
 
 p {
   font-size: 1.2rem;                  /* Paragraph text size */
-  margin-bottom: 1.5rem;              /* Space under paragraphs */
+  margin-bottom: 1.5rem;              /* Adds space under each paragraph */
 }
 
 /* ------------------------------
@@ -74,14 +74,15 @@ p {
 footer {
   text-align: center;                 /* Centers the footer content */
   margin-top: 4rem;                   /* Adds space between content and footer */
-  padding: 1rem;                      /* Padding inside the footer */
+  padding: 1rem;                      /* Adds padding inside the footer */
   font-size: 0.9rem;                  /* Smaller font size for footer */
-  color: var(--text-secondary);       /* Light Sage for footer text */
+  color: var(--text-primary);         /* Dark text color for footer */
 }
 
 /* ------------------------------
-   Common Section Styling (Used across all sections)
+   General Section Styles
 --------------------------------- */
 section {
-  margin-bottom: 2rem;                /* Adds space between sections */
+  margin-bottom: 2rem;                /* Adds space between each section */
 }
+
