@@ -1,117 +1,57 @@
+/* 🌿 Color Variables */
 :root {
-  --bg-color: #FAFAF9;
-  --accent-1: #8C977A;
-  --accent-2: #C19A6B;
-  --text-primary: #333333;
-  --text-secondary: #66615B;
-  --highlight: #E7DCCB;
+  --bg-color: #FAFAF9;         /* Light background */
+  --accent-1: #8C977A;         /* For headings */
+  --accent-2: #C19A6B;         /* For links/buttons */
+  --text-primary: #333333;     /* Main text */
+  --text-secondary: #66615B;   /* Subtle text */
+  --highlight: #E7DCCB;        /* Section backgrounds */
+  --nav-bg: #2D3E2A;           /* Top nav background */
+  --nav-hover: #7A8F71;        /* Nav hover color */
+  --button-bg: #FF6F61;        /* Main button */
+  --button-hover: #E85B4F;     /* Button hover */
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-primary);
-  font-family: 'Georgia', serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-h1, h2, h3 {
-  color: var(--accent-1);
-}
-
-a {
-  color: var(--accent-2);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent-1);
-}
-
-section {
-  padding: 2rem;
-  background-color: var(--highlight);
-  border-radius: 12px;
-  margin: 1rem;
-}
-
-/* Reset some default styles */
+/* 🌿 Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General page setup */
+/* 🌿 Body Setup */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F7F5F1;
-  color: #222;
+  font-family: 'Georgia', serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
-.top-nav {
-  background-color: #2D3E2A;
-  padding: 1rem;
+/* 🌿 Headings */
+h1, h2, h3 {
+  color: var(--accent-1);
 }
 
-.top-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.top-nav a {
-  color: white;
+/* 🌿 Links */
+a {
+  color: var(--accent-2);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.top-nav a:hover {
-  color: #7A8F71;
+a:hover {
+  color: var(--accent-1);
 }
 
-.welcome {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: white;
-  margin-top: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.welcome h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.welcome p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #ff6f61;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #e85b4f;
-}
-
-footer {
-  text-align: center;
-  margin-top: 4rem;
+/* 🌿 Navigation */
+.top-nav {
+  background-color: var(--nav-bg);
   padding: 1rem;
-  font-size: 0.9rem;
-  color: #666;
 }
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-a
+
 
