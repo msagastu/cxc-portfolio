@@ -129,5 +129,12 @@ section {
 /* ------------------------------
    Footer
    The footer at the bottom of the page
---
+--------------------------------- */
+footer {
+  text-align: center;                 /* Centers footer text */
+  margin-top: 4rem;                   /* Adds space between the main content and footer */
+  padding: 1rem;                      /* Adds padding inside the footer */
+  font-size: 0.9rem;                  /* Slightly smaller font in footer */
+  color: var(--text-secondary);       /* Light Sage - Uses subtle text color */
+}
 
