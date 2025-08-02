@@ -72,7 +72,7 @@ ul {
 .top-nav a {
   color: white;
   font-weight: normal;
-  font-size: 1.1em; /* Increased text size slightly for readability */
+  font-size: 1em; /* Default size for navigation text */
   transition: color 0.3s ease;
 }
 
@@ -87,20 +87,20 @@ ul {
   background-color: var(--white); /* White background */
   padding: 60px 20px;
   text-align: center;
-  max-width: 1050px; /* Increased width for welcome section */
+  max-width: 1000px;
   margin: 20px auto;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 16px; /* Default text size */
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4); /* Optional shadow for depth */
 }
 
 .welcome h1 {
-  font-size: 3.2em; /* Larger header to highlight welcome section */
+  font-size: 2em; /* Set to a reasonable size for the header */
   margin-bottom: 20px;
 }
 
 .welcome p {
-  font-size: 2.3em; /* Bigger text inside welcome for better readability */
+  font-size: 1.2em; /* Slightly larger for better readability */
   max-width: 700px;
   margin: auto;
 }
@@ -114,18 +114,18 @@ ul {
   text-align: center;
   border-top: 1px solid var(--light-sage);
   border-radius: 15px;  /* Rounded corners for a smoother look */
-  max-width: 900px; /* Increased max-width a little bit */
+  max-width: 850px; /* Standard width */
   margin: 30px auto; /* Centered with space around */
 }
 
 .about h2 {
-  font-size: 2.5em; /* Increased font size for more emphasis */
+  font-size: 2.5em; /* Default size for h2 */
   margin-bottom: 15px;
 }
 
 .about p {
-  font-size: 1.2em; /* Larger text inside section */
-  max-width: 650px; /* A bit wider for consistency */
+  font-size: 1.1em; /* Standard size for paragraphs */
+  max-width: 600px; /* A bit more narrow for readability */
   margin: auto;
   margin-bottom: 20px;
 }
@@ -133,7 +133,7 @@ ul {
 /* Button styling */
 .button {
   display: inline-block;
-  padding: 12px 25px; /* Slightly bigger button padding */
+  padding: 10px 20px; /* Standard padding size */
   background-color: var(--forest-green);
   color: white;
   border-radius: 5px;
@@ -152,41 +152,13 @@ ul {
   background-color: var(--white); /* White background */
   padding: 40px 25px;
   text-align: center;
-  max-width: 900px; /* Same width as about for uniformity */
+  max-width: 850px; /* Standard width */
   margin: 30px auto; /* Centered with space around */
   border-top: 1px solid var(--light-sage);
   border-radius: 15px; /* Rounded corners for a smooth appearance */
 }
 
 .why h2 {
-  font-size: 2.5em; /* Slightly bigger h2 */
+  font-size: 2.4em; /* Default size for h2 */
   margin-bottom: 15px;
-  text-align: center;
-}
 
-.why h3 {
-  font-size: 1.2em; /* Larger subheading to draw attention */
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.why p {
-  font-size: 1.3em; /* Bigger text for improved readability */
-  line-height: 1.6;
-}
-
-.why ul {
-  margin-top: 10px;
-  font-size: 1.1em; /* Consistent sizing with the rest of the section */
-}
-
-/* ----------------------------
-   Footer
----------------------------- */
-footer {
-  background-color: var(--forest-green);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
