@@ -1,3 +1,41 @@
+:root {
+  --bg-color: #FAFAF9;
+  --accent-1: #8C977A;
+  --accent-2: #C19A6B;
+  --text-primary: #333333;
+  --text-secondary: #66615B;
+  --highlight: #E7DCCB;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--accent-1);
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-1);
+}
+
+section {
+  padding: 2rem;
+  background-color: var(--highlight);
+  border-radius: 12px;
+  margin: 1rem;
+}
+
 /* Reset some default styles */
 * {
   margin: 0;
