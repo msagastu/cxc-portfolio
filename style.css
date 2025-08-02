@@ -3,12 +3,12 @@
    These are reusable colors you can change in one place.
 --------------------------------- */
 :root {
-  --bg-color: #FAFAF9;        /* Background of the whole site */
-  --accent-1: #8C977A;        /* Green used for headers and navbar */
-  --accent-2: #C19A6B;        /* Tan used for buttons and links */
-  --highlight: #E7DCCB;       /* Light beige used for sections */
-  --text-primary: #333333;    /* Main text color */
-  --text-secondary: #66615B;  /* Subtext / footer text */
+  --bg-color: #F7F5F1;           /* Natural Cream - Main background */
+  --accent-1: #4A6741;           /* Forest Green - Primary accent (nav, headings) */
+  --accent-2: #5F7A56;           /* Sage Green - Secondary accent (buttons, links) */
+  --highlight: #E8E3D3;          /* Warm Beige - Section backgrounds, subtle highlights */
+  --text-primary: #2D3E2A;       /* Deep Forest Green - Main text */
+  --text-secondary: #7A8F71;     /* Light Sage - Subtext, footer text */
 }
 
 /* ------------------------------
