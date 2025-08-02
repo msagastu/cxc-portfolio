@@ -7,16 +7,18 @@
   --sage: #5F7A56;              /* Sage Green - secondary accents */
   --light-sage: #7A8F71;        /* Light Sage - soft touches */
   --white: #ffffff;             /* Clean white background */
+   --bg-color: #dedcd8;           /* Natural Cream - Soft background for the page */
+   --text-primary: #2D3E2A;       /* Deep Forest Green - Main text color (darkest) */
 }
 
 /* ----------------------------
    Global Styles
 ---------------------------- */
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #F7F5F1;
-  color: #333333;
+  background-color: var(--bg-color);   /* Background color is a soft cream */
+  color: var(--text-primary);          /* Text color set to Deep Forest Green */
+  font-family: 'Georgia', serif;       /* Elegant serif font for readability */
+  line-height: 1.6;                    /* Spacing between lines for easier reading */
 }
 
 h1, h2, h3 {
