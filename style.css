@@ -6,8 +6,6 @@
   --forest-green: #4A6741;      /* Forest Green - navigation, accents */
   --sage: #5F7A56;              /* Sage Green - secondary accents */
   --light-sage: #7A8F71;        /* Light Sage - soft touches */
-  --cream: #F7F5F1;             /* Natural Cream - soft background (unused) */
-  --beige: #E8E3D3;             /* Warm Beige - optional neutral (unused) */
   --white: #ffffff;             /* Clean white background */
 }
 
@@ -57,7 +55,7 @@ ul {
 
 .top-nav a {
   color: white;
-  font-weight: bold;
+  font-weight: normal;
   transition: color 0.3s ease;
 }
 
@@ -113,7 +111,7 @@ ul {
   background-color: var(--forest-green);
   color: white;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: normal;
   transition: background-color 0.3s ease;
 }
 
@@ -124,33 +122,33 @@ ul {
 /* ----------------------------
    The Why Section
 ---------------------------- */
-.TheWhy {
+.why {
   background-color: var(--white); /* Consistent clean background */
   padding: 60px 20px;
-  text-align: left;
+  text-align: center;
   max-width: 800px;
   margin: auto;
   border-top: 1px solid var(--light-sage);
 }
 
-.TheWhy h2 {
+.why h2 {
   font-size: 2.2em;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.TheWhy h3 {
+.why h3 {
   font-size: 1.5em;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.TheWhy p {
+.why p {
   font-size: 1.1em;
   line-height: 1.6;
 }
 
-.TheWhy ul {
+.why ul {
   margin-top: 10px;
   font-size: 1.05em;
 }
