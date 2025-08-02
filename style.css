@@ -52,6 +52,68 @@ a:hover {
 
 .top-nav ul {
   display: flex;
-  justify-content: space-a
+  justify-content: space-around;
+  list-style: none;
+}
+
+.top-nav a {
+  color: white;
+}
+
+.top-nav a:hover {
+  color: var(--nav-hover);
+}
+
+/* 🌿 Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* 🌿 Buttons */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--button-bg);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+/* 🌿 Sections */
+section {
+  padding: 2rem;
+  background-color: var(--highlight);
+  border-radius: 12px;
+  margin: 1rem;
+}
+
+/* 🌿 Footer */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 
 
