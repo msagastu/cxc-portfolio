@@ -85,14 +85,14 @@ ul {
   background-color: var(--white); /* White background */
   padding: 30px 20px; /* Increased padding for more white space */
   text-align: center;
-  margin: 20px auto; /* Added more margin for ample white space */
+  margin: 10px auto; /* Added more margin for ample white space */
   border-radius: 20px;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
   max-width: 1000px; /* Set the max-width to make it more centered and not too wide */
 }
 
 .welcome h1 {
-  font-size: 3.5em; /* Slightly larger font for prominence */
+  font-size: 3.3em; /* Slightly larger font for prominence */
   margin-bottom: 20px;
 }
 
@@ -107,21 +107,22 @@ ul {
 ---------------------------- */
 .about {
   background-color: var(--white); /* White background */
-  padding: 30px 20px; /* Increased padding for more breathing room */
+  padding: 20px 5px; /* Increased padding for more breathing room */
   text-align: center;
   border-top: 1px solid var(--light-sage);
   border-radius: 20px; /* Added rounded corners */
-  max-width: 1000px; /* Slightly skinnier than the Welcome section */
+  max-width: 950px; /* Slightly skinnier than the Welcome section */
   margin: 20px auto; /* Centers it with some space */
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
 }
 
 .about h2 {
-  font-size: 2.5em; /* Slightly smaller than Welcome */
+  font-size: 2.6em; /* Slightly smaller than Welcome */
   margin-bottom: 15px;
 }
 
 .about p {
-  font-size: 1.2em; /* Slightly larger text for readability */
+  font-size: 1.4em; /* Slightly larger text for readability */
   max-width: 600px;
   margin: auto;
   margin-bottom: 20px;
@@ -138,6 +139,7 @@ ul {
   margin: 30px auto; /* Added space between sections */
   border-top: 1px solid var(--light-sage);
   border-radius: 15px; /* Added rounded corners */
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
 }
 
 .why h2 {
@@ -160,6 +162,26 @@ ul {
   margin-top: 10px;
   font-size: 1.1em;
 }
+
+/* ----------------------------
+   Button
+---------------------------- */
+
+.button {
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: var(--forest-green);
+  color: white;
+  font-size: 1.2em;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: var(--light-sage);
+}
+
 
 /* ----------------------------
    Footer
