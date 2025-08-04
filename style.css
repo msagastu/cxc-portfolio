@@ -155,12 +155,14 @@ ul {
 
 .why p {
   font-size: 1.2em; /* Increased text size for readability */
+  padding: 05px 15px;
   line-height: 1.6;
 }
 
-.why ul {
-  margin-top: 10px;
-  font-size: 1.1em;
+.why li {
+  font-size: 1.2em; /* Increased text size for readability */
+  padding: 05px 15px;
+  line-height: 1.6;
 }
 
 /* ----------------------------
