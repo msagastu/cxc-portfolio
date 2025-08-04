@@ -118,14 +118,14 @@ ul {
 
 .about h2 {
   font-size: 2.6em; /* Slightly smaller than Welcome */
-  margin-bottom: 15px;
+  margin-bottom: 05px;
 }
 
 .about p {
   font-size: 1.4em; /* Slightly larger text for readability */
   max-width: 600px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 01px;
 }
 
 /* ----------------------------
@@ -133,10 +133,10 @@ ul {
 ---------------------------- */
 .why {
   background-color: var(--white); /* Clean white background */
-  padding: 70px 30px; /* Adjusted padding to match About */
+  padding: 20px 05px; /* Adjusted padding to match About */
   text-align: center;
-  max-width: 500px; /* Slightly skinnier than the Welcome section */
-  margin: 30px auto; /* Added space between sections */
+  max-width: 950px; /* Slightly skinnier than the Welcome section */
+  margin: 20px auto; /* Added space between sections */
   border-top: 1px solid var(--light-sage);
   border-radius: 15px; /* Added rounded corners */
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
@@ -144,13 +144,13 @@ ul {
 
 .why h2 {
   font-size: 2.3em; /* Slightly smaller for hierarchy */
-  margin-bottom: 15px;
+  margin-bottom: 05px;
 }
 
 .why h3 {
   font-size: 1.6em; /* Slightly larger for subheading emphasis */
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 05px;
 }
 
 .why p {
