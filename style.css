@@ -27,8 +27,10 @@ html, body {
 }
 
 body {
-  background-color: var(--bg-color);   /* Background color is a soft gray */
-  color: var(--text-primary);          /* Text color set to Deep Forest Green */
+  background-image:url('assets/backdrop.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: 'Georgia', serif;       /* Elegant serif font for readability */
   line-height: 1.6;                    /* Spacing between lines for easier reading */
 }
