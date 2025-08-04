@@ -160,7 +160,38 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid #D3D3D3;
 }
+/*----------------------------
+ About-Education
+ ----------------------------- */
 
+.education {
+  background-color: var(--white); /* White background */
+  padding: 20px 5px; /* Increased padding for more breathing room */
+  text-align: center;
+  border-top: 1px solid var(--light-sage);
+  border-radius: 20px; /* Added rounded corners */
+  max-width: 950px; /* Slightly skinnier than the Welcome section */
+  margin: 20px auto; /* Centers it with some space */
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.education h1 {
+  font-size: 2.3em; /* Slightly larger font for prominence */
+  text-align: center;
+  margin-bottom: 05px;
+}
+
+.education h2 {
+  font-size: 2.6em; /* Slightly smaller than Welcome */
+  margin-bottom: 05px;
+}
+
+.education p {
+  font-size: 1.4em; /* Slightly larger text for readability */
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 01px;
+}
 
 
 /* ----------------------------
