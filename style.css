@@ -79,6 +79,16 @@ ul {
 .top-nav a:hover {
   color: var(--light-sage);
 }
+/* ----------------------------
+    Section
+---------------------------- */
+section {
+padding: 3rem 2rem;
+}
+
+.welcome,.about{
+   border-bottom: 10px solid #4A6741;
+}
 
 /* ----------------------------
    Welcome Section
@@ -113,7 +123,7 @@ ul {
   text-align: center;
   border-top: 1px solid var(--light-sage);
   border-radius: 20px; /* Added rounded corners */
-  max-width: 950px; /* Slightly skinnier than the Welcome section */
+  max-width: 1000px; /* Slightly skinnier than the Welcome section */
   margin: 20px auto; /* Centers it with some space */
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
 }
@@ -172,7 +182,7 @@ ul {
   text-align: center;
   border-top: 1px solid var(--light-sage);
   border-radius: 20px; /* Added rounded corners */
-  max-width: 950px; /* Slightly skinnier than the Welcome section */
+  max-width: 1010px; /* Slightly skinnier than the Welcome section */
   margin: 20px auto; /* Centers it with some space */
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
 }
@@ -250,6 +260,218 @@ ul {
 
 .button:hover {
   background-color: var(--light-sage);
+}
+
+/*------------------------------
+CxC Profile Sections & Work Section CSS
+----------------------------*/
+
+.timeline-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto 2rem auto;
+  color: #ffffff;
+  text-align: center; 
+  border-radius: 12px;
+  max-width: 900px;
+  background-color: #5F7A56;
+  padding: 1rem 2rem;
+}
+
+.timeline-section {
+  background-color: var(--white);
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Timeline container with vertical line */
+.timeline-container {
+  position: relative;
+  margin-left: 20px;
+  border-left: 3px solid var(--sage); /* vertical line */
+}
+
+/* Individual timeline entry */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+/* Timeline dot */
+.timeline-icon {
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--forest-green);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--light-sage);
+}
+
+/* Card content beside each dot */
+.timeline-content {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  font-size: 1.4em;
+  color: var(--forest-dark);
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 1.1em;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/*------------------------------
+Professional Profile CSS
+----------------------------*/
+.professional {
+  font-size: 2rem;
+  margin: 1rem auto 2rem auto;
+  color: #2D3E2A;
+  text-align: center; 
+  border-radius: 12px;
+  max-width: 1250px;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.professional h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--forest-dark);
+}
+
+.professional p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.profile-cards {
+  padding: 3rem 2rem;
+}
+
+.profile-cards h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  max-width: 500px;
+   margin: 1rem auto 2rem auto;
+  color: var(--forest-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--forest-dark);
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--forest-dark);
+  line-height: 1.5;
+}
+
+.experience-card {
+  padding: 3rem 2rem;
+}
+
+.experience-card h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  max-width: 500px;
+   margin: 1rem auto 2rem auto;
+  color: var(--forest-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.experience {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.experience:hover {
+  transform: translateY(-5px);
+}
+
+.experience-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.expierence h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--forest-dark);
+}
+
+.expierence p {
+  font-size: 1rem;
+  color: var(--forest-dark);
+  line-height: 1.5;
 }
 
 
